@@ -63,6 +63,7 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
 
             Intent newIntent = new Intent(getActivity().getApplicationContext(), Main2Activity.class);
             newIntent.setAction(Intent.ACTION_SEND);
+            Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
             Bundle bundle = new Bundle();
 
             bundle.putString("KEY",array.get(i).getNombre());
@@ -70,7 +71,7 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
             bundle.putString("KEY3", array.get(i).getColor());
             newIntent.setType("*/*");
             newIntent.putExtras(bundle);
-            newIntent.putExtra("Key4",array.get(i).getImagen());
+            newIntent.putExtra("Photo",array.get(i).getImagen());
 
 
             startActivity(newIntent);

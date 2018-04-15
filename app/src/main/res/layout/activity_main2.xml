@@ -16,7 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#311B92"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_weight="1" />
 
         <ImageView
             android:layout_width="150dp"
@@ -29,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textId2"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#000000"/>
 
 
@@ -38,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textId3"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#000000"/>
 
 
