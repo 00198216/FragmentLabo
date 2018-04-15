@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,19 +15,29 @@ import android.widget.Toast;
 
 public class FragmentViewer extends Fragment {
     TextView text;
+    TextView text2;
+    TextView text3;
+    ImageView Photo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.viewer_fragment, container, false);
 
         text = view.findViewById(R.id.textId);
+        text2= view.findViewById(R.id.textId2);
+        text3= view.findViewById(R.id.textId3);
+        Photo= view.findViewById(R.id.Img);
+
         Bundle bundle = this.getArguments();
 
 
         if(bundle != null){
-            Toast.makeText(getActivity(), "Item: " + bundle.getString("KEY"), Toast.LENGTH_SHORT).show();
 
             text.setText(bundle.getString("KEY"));
+            text2.setText(bundle.getString("KEY2"));
+            text3.setText(bundle.getString("KEY3"));
+            Photo.setImageResource(bundle.getInt("KEY4"));
+
 
         }
 
