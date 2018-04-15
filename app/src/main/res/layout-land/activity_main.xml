@@ -19,7 +19,8 @@
         android:layout_weight="2"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/viewer">
+        android:id="@+id/viewer"
+        android:background="#1A237E">
 
     </LinearLayout>
 

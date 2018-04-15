@@ -59,6 +59,8 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         //Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
 
+        // Si es Portrait
+
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
 
             Intent newIntent = new Intent(getActivity().getApplicationContext(), Main2Activity.class);
@@ -76,7 +78,9 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
 
             startActivity(newIntent);
 
-        }else if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+        }
+        // Si es Landscape
+        else if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
 
             Bundle bundle = new Bundle();
@@ -99,6 +103,8 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
 
     }
 
+    // Instancia y agrega la info de planetas
+    
     public void InstanciarPlanetas(){
 
         Sol= new Planetas("Sol","El color del planeta es Naranja","Poblacion total del planeta: 0",R.drawable.sol);

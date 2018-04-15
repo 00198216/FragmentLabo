@@ -16,7 +16,7 @@ public class Main2Activity extends AppCompatActivity {
     Bundle bundle;
     Intent a;
 
-
+// Para llamar la info del Intent. El string por bundles de intents y la foto por intents.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

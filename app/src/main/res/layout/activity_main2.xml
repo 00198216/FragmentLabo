@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.rafaj.fragmentapp.Main2Activity">
+    tools:context="com.example.rafaj.fragmentapp.Main2Activity"
+    android:background="#1A237E">
 
 
 
@@ -15,7 +16,7 @@
             android:id="@+id/textId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#311B92"
+            android:textColor="#B71C1C"
             android:textSize="24sp"
             android:layout_weight="1"
             android:layout_marginTop="10dp"/>
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textId2"
             android:textSize="15sp"
-            android:textColor="#000000"
+            android:textColor="#FFF"
             android:layout_weight="1"/>
 
 
@@ -43,7 +44,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textId3"
             android:textSize="15sp"
-            android:textColor="#000000"
+            android:textColor="#FFF"
             android:layout_weight="1"/>
 
 

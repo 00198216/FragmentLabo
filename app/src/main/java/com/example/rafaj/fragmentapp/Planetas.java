@@ -21,6 +21,8 @@ public class Planetas {
         Imagen = imagen;
     }
 
+    // Setters y Getters Nombre
+
     public String getNombre() {
         return Nombre;
     }
@@ -28,6 +30,8 @@ public class Planetas {
     public void setNombre(String nombre) {
         Nombre = nombre;
     }
+
+    // Setters y Getters Color
 
     public String getColor() {
         return Color;
@@ -37,6 +41,8 @@ public class Planetas {
         Color = color;
     }
 
+    // Setters y Getters Poblacion
+
     public String getPoblacion() {
         return Poblacion;
     }
@@ -44,6 +50,8 @@ public class Planetas {
     public void setPoblacion(String poblacion) {
         Poblacion = poblacion;
     }
+
+    // Setters y Getters Imagen
 
     public int getImagen() {
         return Imagen;

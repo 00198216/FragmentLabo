@@ -13,6 +13,8 @@ import android.widget.Toast;
  * Created by rafaj on 8/4/2018.
  */
 
+//Llama la informacion de la arrayview para landcape, todo va en bundle.
+
 public class FragmentViewer extends Fragment {
     TextView text;
     TextView text2;
