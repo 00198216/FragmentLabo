@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by charl on 13/4/2018.
  */
 
+//Implementamos Seriable
 public class Planetas implements Serializable {
     String Nombre;
     String Color;

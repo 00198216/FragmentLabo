@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">FragmentApp</string>
 
+    <!-- String Array con Planetas-->
+
     <string-array name="Planets">
         <item>Sol</item>
         <item>Mercurio</item>
@@ -13,7 +15,7 @@
         <item>Neptuno</item>
     </string-array>
 
-
+    <!-- String Array con Nombres-->
     <string-array name="Nombre">
         <item>Sol</item>
         <item>Mercurio</item>
@@ -26,6 +28,7 @@
         <item>Neptuno</item>
     </string-array>
 
+    <!-- String Array con Color-->
     <string-array name="Color">
         <item>El color del planeta es Naranja</item>
         <item>El color del planeta es Marrón</item>
@@ -38,6 +41,7 @@
         <item>El color del planeta es Azul</item>
     </string-array>
 
+    <!-- String Array con Poblacion-->
     <string-array name="Poblacion">
         <item>Poblacion total del planeta: 0</item>
         <item>Poblacion total del planeta: 0</item>
@@ -50,6 +54,7 @@
         <item>Poblacion total del planeta: 0</item>
     </string-array>
 
+    <!-- String Array con Imagenes-->
     <string-array name="Imagenes">
         <item>0</item>
         <item>1</item>

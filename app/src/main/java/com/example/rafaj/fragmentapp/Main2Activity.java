@@ -19,7 +19,7 @@ public class Main2Activity extends AppCompatActivity {
     Bundle bundle;
     Intent a;
 
-// Para llamar la info del Intent. El string por bundles de intents y la foto por intents.
+// inicializando.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,8 @@ public class Main2Activity extends AppCompatActivity {
 
         Intent callingIntent = this.getIntent();
         bundle= callingIntent.getExtras();
+
+        //Reciviendo Datos del intent
 
         Planetas Planeta =(Planetas)bundle.getSerializable("Key") ;
 

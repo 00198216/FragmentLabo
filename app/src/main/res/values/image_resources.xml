@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Array con la ruta de imagenes -->
     <array name="Icons">
         <item>@drawable/sol</item>
         <item>@drawable/mercurio</item>

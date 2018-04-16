@@ -46,6 +46,7 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.list_fragment, container, false);
 
+        //Agarrando Datos
 
         Nombres = getResources().getStringArray(R.array.Nombre);
         Photo =  getResources().getStringArray(R.array.Imagenes);
@@ -78,6 +79,8 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
 
+            //Mandamos datos atravez de un Intent
+
             Intent newIntent = new Intent(getActivity().getApplicationContext(), Main2Activity.class);
             Bundle bundle= new Bundle();
             bundle.putSerializable("Key",PlanetaObjeto);
@@ -95,6 +98,8 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
         else if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
 
             Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
+
+            //Mandando el Bundle atravez de Fragment Transaction
 
 
             FragmentViewer fragment = new FragmentViewer();

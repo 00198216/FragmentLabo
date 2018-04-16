@@ -40,6 +40,8 @@ public class FragmentViewer extends Fragment {
 
         if(bundle != null){
 
+            //Reciviendo el objeto del Fragment Transaction
+
             Planetas Planeta =(Planetas)bundle.getSerializable("Key") ;
 
 
