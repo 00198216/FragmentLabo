@@ -1,6 +1,9 @@
 package com.example.rafaj.fragmentapp;
 
 import android.app.Fragment;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,12 +36,24 @@ public class FragmentViewer extends Fragment {
         Bundle bundle = this.getArguments();
 
 
+
+
         if(bundle != null){
 
-            text.setText(bundle.getString("KEY"));
-            text2.setText(bundle.getString("KEY2"));
-            text3.setText(bundle.getString("KEY3"));
-            Photo.setImageResource(bundle.getInt("KEY4"));
+            Planetas Planeta =(Planetas)bundle.getSerializable("Key") ;
+
+
+            Resources reso =getResources();
+            TypedArray Icons = reso.obtainTypedArray(R.array.Icons);
+            Drawable drawable = Icons.getDrawable(Integer.parseInt(Planeta.getImagen()));
+
+
+
+            text.setText(Planeta.getNombre());
+            Photo.setImageDrawable(drawable);
+            text2.setText(Planeta.getPoblacion());
+            text3.setText(Planeta.getColor());
+
 
 
         }

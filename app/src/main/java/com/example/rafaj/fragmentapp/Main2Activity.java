@@ -1,6 +1,9 @@
 package com.example.rafaj.fragmentapp;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,15 +24,32 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        Intent callingIntent = getIntent();
-
 
         text= findViewById(R.id.textId);
         text2= findViewById(R.id.textId2);
         text3= findViewById(R.id.textId3);
         Photo= findViewById(R.id.Img);
 
-        bundle= getIntent().getExtras();
+        Intent callingIntent = this.getIntent();
+        bundle= callingIntent.getExtras();
+
+        Planetas Planeta =(Planetas)bundle.getSerializable("Key") ;
+
+
+        Resources reso =getResources();
+        TypedArray Icons = reso.obtainTypedArray(R.array.Icons);
+        Drawable drawable = Icons.getDrawable(Integer.parseInt(Planeta.getImagen()));
+
+
+
+        text.setText(Planeta.getNombre());
+        Photo.setImageDrawable(drawable);
+        text2.setText(Planeta.getPoblacion());
+        text3.setText(Planeta.getColor());
+
+
+
+       /* bundle= getIntent().getExtras();
         a= getIntent();
 
 
@@ -37,6 +57,7 @@ public class Main2Activity extends AppCompatActivity {
         text2.setText(bundle.getString("KEY2"));
         text3.setText(bundle.getString("KEY3"));
         Photo.setImageResource(a.getIntExtra("Photo",0));
+        */
 
 
          String intentAction = callingIntent.getAction();

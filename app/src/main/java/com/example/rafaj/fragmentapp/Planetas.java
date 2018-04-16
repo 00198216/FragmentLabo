@@ -1,20 +1,22 @@
 package com.example.rafaj.fragmentapp;
 
+import java.io.Serializable;
+
 /**
  * Created by charl on 13/4/2018.
  */
 
-public class Planetas {
+public class Planetas implements Serializable {
     String Nombre;
     String Color;
     String Poblacion;
-    int Imagen;
+    String Imagen;
 
 // Clase para planetas
 
     // Construtor
 
-    public Planetas(String nombre,String color,String poblacion,int imagen) {
+    public Planetas(String nombre,String color,String poblacion,String imagen) {
         Nombre = nombre;
         Color = color;
         Poblacion = poblacion;
@@ -53,11 +55,11 @@ public class Planetas {
 
     // Setters y Getters Imagen
 
-    public int getImagen() {
+    public String getImagen() {
         return Imagen;
     }
 
-    public void setImagen(int imagen) {
+    public void setImagen(String imagen) {
         Imagen = imagen;
     }
 }

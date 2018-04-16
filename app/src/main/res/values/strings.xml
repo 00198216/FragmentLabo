@@ -2,14 +2,65 @@
     <string name="app_name">FragmentApp</string>
 
     <string-array name="Planets">
-        <item>Sun</item>
-        <item>Mercury</item>
+        <item>Sol</item>
+        <item>Mercurio</item>
         <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
+        <item>Tierra</item>
+        <item>Marte</item>
         <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
     </string-array>
+
+
+    <string-array name="Nombre">
+        <item>Sol</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
+
+    <string-array name="Color">
+        <item>El color del planeta es Naranja</item>
+        <item>El color del planeta es Marrón</item>
+        <item>El color del planeta es Amarillo</item>
+        <item>El color del planeta es Azul y Verde</item>
+        <item>El color del planeta es Rojo</item>
+        <item>El color del planeta es Naranja y Blanco</item>
+        <item>El color del planeta es Beige</item>
+        <item>El color del planeta es Morado</item>
+        <item>El color del planeta es Azul</item>
+    </string-array>
+
+    <string-array name="Poblacion">
+        <item>Poblacion total del planeta: 0</item>
+        <item>Poblacion total del planeta: 0</item>
+        <item>Poblacion total del planeta: 0</item>
+        <item>Poblacion total del planeta: 7.442 mm</item>
+        <item>Poblacion total del planeta: 0</item>
+        <item>Poblacion total del planeta: 0</item>
+        <item>Poblacion total del planeta: 0</item>
+        <item>Poblacion total del planeta: 0</item>
+        <item>Poblacion total del planeta: 0</item>
+    </string-array>
+
+    <string-array name="Imagenes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+
 </resources>
